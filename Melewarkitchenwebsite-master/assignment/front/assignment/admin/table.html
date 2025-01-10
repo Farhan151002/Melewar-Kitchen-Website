@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./admin.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+    
+        <title>Admin | Melewar Kitchen</title>
+    </head>
+    <body>
+        <nav>
+            <div class="container nav-container">
+                <a href="home.html">
+                    <img src="./res/logo.jpg"  alt="melewarkitchenlogo" width="100px">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="user.html">User Management</a></li>
+                    <li><a href="table.html">Table Management</a></li>
+                    <li><a href="editmenu.html">Menu Management</a></li>
+                    <li><a href="/front/assignment/home.html">Logout</a></li>
+                </ul>
+                <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+                <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+            </div>
+        </nav>
+        <main class="bg-image" style="min-height: 70%;">
+            <!-- Table Management Section -->
+            <div class="user-management-section">
+                <div class="admin">
+                  <h2 style="color: black;">Admin Section</h2>
+                  <div class="user-management">
+                    <h3 style="color: black;">Table Management</h3>
+                    <ul>
+                      <li><a href="#" class="view-users-link text-center" style="background-color: #ff726f;"><strong>View Users</strong></a></li>
+                      <p style="color: red; font-size: small">*press the column to update</p>
+                      <table class="view-users-linkk">
+                        <thead>
+                          <tr>
+                            <th>Table No.</th>
+                            <th>Status</th>
+                            <th>Booking ID</th>
+                            <th>Date & Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr id="John">
+                            <td>1</td>
+                            <td>booked</td>
+                            <td>231124</td>
+                            <td>5/5/23 - 2000</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>available</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                          <tr id="Jane Smith">
+                            <td>Big family table 1</td>
+                            <td>booked</td>
+                            <td>436363</td>
+                            <td>5/5/23 - 1930</td>
+                          </tr>
+                          <tr id="Bob Johnson">
+                            <td>Private Family Room</td>
+                            <td>booked</td>
+                            <td>235253</td>
+                            <td>4/5/23 - 2000</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- The form for updating user information -->
+                        <form class="update-user-form" method="post">
+                            <br><h2>Update User Information</h2>
+                            <div class="form-group">
+                            <label for="status">Status:</label>
+                            <input type="text" id="status" name="status" value="booked">
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingID">Booking ID:</label>
+                                <input type="text" id="bookingID" name="bookingID" value="231124">
+                                </div>
+                            <input type="submit" value="Update">
+                        </form>
+                        <form class="delete-user-form" method="post">
+                            <input type="hidden" name="user_id" value="123">
+                            <input type="submit" value="Delete">
+                        </form>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+              
+            
+        </main>
+
+        <!------------------------------------------------- END OF PAGE CONTENT ------------------------------------->
+
+    <footer class="footer">
+      <div class="footer-copyright">
+          <small>All Right Reserved &copy; 2023 - Melewar Kitchen</small>
+      </div>
+  </footer>
+  <!------------------------------------------------ End Of Footer ---------------------------------------------->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./admin.js"></script>
+
+  <script>
+      var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+          },
+          //when window width is >= 600px
+          breakpoints: {
+              600: {
+                  slidesPerView: 2
+              }
+          }
+      });
+  </script>
+    </body>
+</html>

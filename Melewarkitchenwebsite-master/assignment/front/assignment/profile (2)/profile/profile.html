@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./headerfooterstyle.css">
+    <link rel="stylesheet" href="./profile.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+
+
+    <title>Profile</title>
+</head>
+<body>
+<nav>
+    <div class="container nav-container">
+        <a href="home.html">
+            <img src="./res/logo.jpg" alt="melewarkitchenlogo" width="100px">
+        </a>
+        <ul class="nav-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+</nav>
+<!---------------------------------------------------- END OF NAVBAR ---------------------------------------->
+
+<!----------------------------------------------- PAGE CONTENT START HERE ----------------------------------->
+<main class="bg-image">
+    <div class="row" style="height: 600px;">
+        <div class="col">
+            <h1 class="text-center-topic">Welcome to Melewar Kitchen</h1>
+            <h3 class="text-center">Truly Nogori Experience</h3>
+            <div class="row" style="height: 50%;">
+                <div class="col-d-flex"><a href="menu.html" class="btn">Check Our Menu</a></div>
+                <div class="col-d-flex"><a href="reservation.html" class="btn">Order Now</a></div>
+            </div>
+        </div>
+        <div class="col" style="background-image:url('res/profile_table.jpeg');">
+            <div style="display: flex; justify-content: center;"></div>
+            <div class="heading" ><h1 class="text-center-topic">My Profile</h1></div>
+            <div class="profile_container">
+                <table>
+                    <tr>
+                        <td><h4 class="text-center">*Name     : </h4></td>
+                        <td id="name" style="text-align: left;"><h5>Daniel</h5></td>
+
+                    </tr>
+                    <tr>
+                        <td><h4 class="text-center">*Email    : </h4></td>
+                        <td id="email" style="text-align: left;"><h5>daniel0313@gmail.com</h5></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class="text-center">*Phone    : </h4></td>
+                        <td id="phone" style="text-align: left;"><h5>+60 123 456 7890</h5></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class="text-center">*Password : </h4></td>
+                        <td id="password" style="text-align: left;"><h5>123456</h5></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class="text-center">Birthday  : </h4></td>
+                        <td id="birthday" style="text-align: left;"><h5>____/__/__</h5></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class="text-center">Address  : </h4></td>
+                        <td id="address" style="text-align: left;"><h5>No saved address</h5></td>
+                    </tr>
+                    <tr>
+                        <td><h4 class="text-center">Payment  : </h4></td>
+                        <td id="payment" style="text-align: left;"><h5>No payment information</h5></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" style="text-align: center;">* Indicates required field. </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <button class="btn" onclick="location.href='profile-edit.html'">Edit Profile</button>
+                <button class="btn" id="delete-account">Delete Account</button>
+            </div>
+        </div>
+    </div>
+</main>
+<!------------------------------------------------- END OF PAGE CONTENT ------------------------------------->
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-1">
+            <a href="home.html" class="footer-logo"><h4>Melewar Kitchen</h4></a>
+            <p>
+                Your Favourite Delicacies,<br> Truly Nogori!
+            </p>
+        </div>
+
+        <div class="footer-2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+                <li><a href="privacy policy.html">Privacy Policy</a></li>
+                <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                <li><a href="return policy.html">Refund Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-4">
+            <h4>Contact Us</h4>
+            <div>
+                <p>+(01)234567898</p>
+                <p>melewarkitchen@gmail.com</p>
+            </div>
+
+            <ul class="footer-socials">
+                <li>
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <small>All Right Reserved &copy; 2023 - Melewar Kitchen</small>
+    </div>
+</footer>
+<!------------------------------------------------ End Of Footer ---------------------------------------------->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./navmenu.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        //when window width is >= 600px
+        breakpoints: {
+            600: {
+                slidesPerView: 2
+            }
+        }
+    });
+
+    // get delete buttons
+    const deleteButton = document.querySelector('#delete-account')
+
+    // add event to every button
+    deleteButton.addEventListener('click', (event) => {
+        let flag = window.confirm("Are you sure to delete this account?")
+        if (!flag) {
+            return false
+        } else {
+            window.location.href = "home.html"
+        }
+    })
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const email = urlParams.get('email');
+    const phone = urlParams.get('phone');
+    const password = urlParams.get('password');
+    const address = urlParams.get('address');
+    const birthday = urlParams.get('birthday');
+
+    if (name) document.getElementById("name").innerHTML = name;
+    if (email) document.getElementById("email").innerHTML = email;
+    if (phone) document.getElementById("phone").innerHTML = phone;
+    if (password) document.getElementById("password").innerHTML = password;
+    if (address) document.getElementById("address").innerHTML = address;
+    if (birthday) document.getElementById("birthday").innerHTML = birthday;
+</script>
+</body>
+</html>
+
